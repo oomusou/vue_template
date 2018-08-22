@@ -6,9 +6,9 @@
 </head>
 <body>
 <div id="app">
-  <input type="checkbox" v-bind:checked="selected">
+  <input type="checkbox" :checked="selected">
   <p></p>
-  <button v-on:click="toggle">Toggle</button>
+  <button @click="toggle">Toggle</button>
 </div>
 </body>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
