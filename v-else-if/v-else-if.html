@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-else-if</title>
+</head>
+<body>
+<div id="app">
+  <select v-model="selectedValue">
+    <option v-for="(item, index) in items" :value="index">{{ item }}</option>
+  </select>
+  <h1 v-if="selectedValue === 0">Vue</h1>
+  <h1 v-else-if="selectedValue === 1">React</h1>
+  <h1 v-else>Angular</h1>
+</div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="v-else-if.js"></script>
+</html>
