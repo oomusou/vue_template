@@ -6,12 +6,11 @@
 </head>
 <body>
 <div id="app">
-  Vue Architecture
-  <ol>
-    <li v-for="item in items">{{ item }}</li>
-  </ol>
+  <select>
+    <option v-for="month in months">{{ month }}</option>
+  </select>
 </div>
 </body>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="v-for_li.js"></script>
+<script src="v-for_option.js"></script>
 </html>
