@@ -7,7 +7,7 @@
 <body>
 <div id="app">
   <select>
-    <option v-for="month in 12">{{ month }}</option>
+    <option v-for="(month, index) in months" :value="index+1">{{ month }}</option>
   </select>
 </div>
 </body>
