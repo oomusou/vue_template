@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>expression</title>
+</head>
+<body>
+<div id="app">
+  {{ counter }}
+  <input type="checkbox" :checked="counter%2 === 0">
+  <p></p>
+  <button @click="toggle">+1</button>
+</div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="expression.js"></script>
+</html>
